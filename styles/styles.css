@@ -1,0 +1,37 @@
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/tt-norms-regular.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 500;
+  src: url("../fonts/tt-norms-medium.woff2") format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "TT Norms";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/tt-norms-bold.woff2") format("woff2");
+  font-display: swap;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  margin: 0;
+  height: 100%;
+  font-family: "TT Norms", sans-serif;
+  font-size: 14px;
+  line-height: 18px;
+  color: #333333;
+  background-color: #F6F5FF;
+}
