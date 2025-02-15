@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+  </head>
+  <body>
+    <div class="wrapper">
+      <aside class="sidebar">
+        <div class="sidebar__open-btn">
+          <button class="sidebar__icon open-icon" type="button">
+            <span class="visually-hidden">Открыть панель навигации</span>
+          </button>
+        </div>
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">Поиск</a></li>
+            <li class="nav-item"><a class="nav-link nav-link--active" href="index.html">Главная</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">График</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Уведомления</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Диаграммы</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Избранное</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">Кошелек</a></li>
+          </ul>
+        </nav>
+        <div class="sidebar__btn-block">
+          <button class="sidebar__icon exit-icon" type="button">
+            <span class="visually-hidden">Выход</span>
+          </button>
+          <button class="sidebar__icon dark-theme-icon" type="button">
+            <span class="visually-hidden">Темная тема</span>
+          </button>
+        </div>
+      </aside>
+      <main class="page-content">
+        <h1 class="visually-hidden">Информационная панель</h1>
+        <section class="profile">
+          <h2 class="visually-hidden">Профиль</h2>
+          <a class="profile__link" href="#">
+            <div class="profile__info">
+              <p class="profile__name">John Smith</p>
+              <p class="profile__job-title">HR-manager</p>
+            </div>
+            <img class="profile__img" src="img/profile-photo.png" width="48" height="48" alt="John Smith">
+          </a>
+        </section>
+        <section class="indicators">
+          <div class="indicators__wrapper">
+            <h2 class="indicators__title">Юнит-экономика</h2>
+            <div class="indicators__settings">
+              <button class="indicators__marketplace-btn" type="button">
+                <span>Все маркетплейсы</span>
+              </button>
+              <button class="indicators__time-range-btn" type="button">
+                <span>за неделю</span>
+              </button>
+              <button class="indicators__settings-btn" type="button">
+                <span class="visually-hidden">Настройки</span>
+              </button>
+            </div>
+          </div>
+          <div class="indicators__cards">
+            <div class="indicators__card card">
+              <h3 class="card__title">Выручка</h3>
+              <div class="card__indicators-wrapper">
+                <div class="card__indicators">
+                  <p class="card__indicators-money">250 034 ₽</p>
+                  <p class="card__indicators-percent">+15% к прошлому периоду</p>
+                </div>
+              </div>
+              <img class="card__chart" src="img/revenue-chart.png" width="120" height="42" alt="Выручка">
+            </div>
+          </div>          
+        </section>
+        <section class="widgets">
+          <div class="widgets__wrapper">
+            <h2 class="widgets__title">Юнит-экономика</h2>
+            <button class="widgets__settings-btn" type="button">
+              <span class="visually-hidden">Настройки</span>
+            </button>
+          </div>
+          <div class="widgets__cards">
+            <div class="widgets__card widget">
+              <h3 class="widget__title">Текущие заказы FBS</h3>
+              <div class="widget__wrapper">
+                <div class="widget__info">
+                  <div class="widget__order">
+                    <p class="widget__order-type">Новые</p>
+                    <p class="widget__order-quantity">8 заказов</p>
+                  </div>
+                  <div class="widget__order">
+                    <p class="widget__order-type">В сборке</p>
+                    <p class="widget__order-quantity">12 заказов</p>
+                  </div>
+                  <div class="widget__order">
+                    <p class="widget__order-type">Отгружены, завершены или отменены</p>
+                    <p class="widget__order-quantity">20 заказов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="widget__chart">
+                <div class="widget__chart-total">
+                  <p class="widget__chart-total-title">Итого</p>
+                  <p class="widget__chart-total-number">40 заказов</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+  </body>
+</html>
