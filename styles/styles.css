@@ -182,6 +182,11 @@ body {
   z-index: 1;
 }
 
+.dark .dark-theme-btn {
+  background-color: #3A3B3C;
+  color: #CCCCCC;
+}
+
 .sidebar-opened .dark-theme-btn::before {
   position: relative;
   content: "";
@@ -189,6 +194,10 @@ body {
   min-height: 24px;
   background-image: url("../img/dark-mode-icon.svg");
   z-index: 1;
+}
+
+.sidebar-opened .dark::before {
+  background-image: url("../img/light-mode-icon.svg");
 }
 
 .dark-theme-btn {
@@ -208,9 +217,19 @@ body {
   z-index: 1;
 }
 
+.dark .dark-theme-btn::after {
+  min-width: 42px;
+  min-height: 24px;
+  background-image: url("../img/switch-on-icon.svg");
+}
+
 .sidebar__btn-text {
   padding-left: 20px;
   padding-right: 12px;
+}
+
+.dark .dark-theme-btn .sidebar__btn-text {
+  padding-right: 10px;
 }
 
 .page-content {
