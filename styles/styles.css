@@ -112,12 +112,20 @@ body {
 }
 
 .nav-link svg {
+  margin-right: 0;
+}
+
+.sidebar-opened .nav-link svg {
   margin-right: 24px;
 }
 
 .sidebar__open-btn-container {
   min-height: 96px;
   position: absolute;
+  min-width: 88px;
+}
+
+.sidebar-opened .sidebar__open-btn-container {
   min-width: 250px;
 }
 
@@ -135,6 +143,10 @@ body {
   cursor: pointer;
 }
 
+.sidebar-opened .open-btn {
+  background-image: url("../img/left-arrow-icon.svg");
+}
+
 .sidebar__btn-block {
   display: flex;
   flex-direction: column;
@@ -145,7 +157,6 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
-  padding: 18px;
   border: none;
   border-radius: 10px;
   color: #8F9FAD;
@@ -158,6 +169,7 @@ body {
 }
 
 .exit-btn {
+  padding: 18px;
   background-color: #FFFFFF;
 }
 
@@ -170,13 +182,21 @@ body {
   z-index: 1;
 }
 
-.dark-theme-btn::before {
+.sidebar-opened .dark-theme-btn::before {
   position: relative;
   content: "";
   min-width: 24px;
   min-height: 24px;
   background-image: url("../img/dark-mode-icon.svg");
   z-index: 1;
+}
+
+.dark-theme-btn {
+  padding: 10px;
+}
+
+.sidebar-opened .dark-theme-btn {
+  padding: 18px;
 }
 
 .dark-theme-btn::after {
