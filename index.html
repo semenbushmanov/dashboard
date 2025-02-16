@@ -18,11 +18,11 @@
         <nav class="sidebar__nav nav">
           <ul class="nav__list">
             <li class="nav__item">
-              <a class="nav__search nav-link" href="#">
+              <a class="nav__search" href="#">
                 <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
                   <path d="m23.707 22.294-5.97-5.97a10.016 10.016 0 1 0-1.413 1.415l5.969 5.969a1 1 0 0 0 1.414-1.414ZM10 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8Z" fill="currentcolor"/>
                 </svg>
-                <span class="nav-link__text">Поиск...</span>
+                <span class="nav-search__text">Поиск...</span>
               </a>
             </li>
             <li class="nav-item">
@@ -80,8 +80,10 @@
             <span class="sidebar__btn-text">Выйти</span>
           </button>
           <button class="sidebar__btn dark-theme-btn" type="button">
-            <span class="sidebar__btn-text dark-mode">Dark mode</span>
-            <span class="sidebar__btn-text light-mode visually-hidden">Light mode</span>
+            <div class="sidebar__btn-text">
+              <span class="dark-mode">Dark mode</span>
+              <span class="light-mode visually-hidden">Light mode</span>
+            </div>
           </button>
         </div>
       </aside>
@@ -138,7 +140,7 @@
               <div class="card__indicators-wrapper">
                 <div class="card__indicators">
                   <p class="card__indicators-money">145 334 ₽</p>
-                  <p class="card__indicators-percent">+15% к прошлому периоду</p>
+                  <p class="card__indicators-percent card__indicators-percent--red">+15% к прошлому периоду</p>
                 </div>
                 <img class="card__chart" src="img/main-expenses-chart.png" width="120" height="42" alt="Выручка">
               </div>

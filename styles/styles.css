@@ -22,6 +22,38 @@
   font-display: swap;
 }
 
+:root {
+  --background-color: #F6F5FF;
+  --sidebar-bg-color: #FFFFFF;
+  --sidebar-bg-active-color: #455AE0;
+  --sidebar-active-color: #FFFFFF;
+  --svg-color: #8F9FAD;
+  --open-btn-color: #455AE0;
+  --heading-color: #333333;
+  --card-bg-color: #FFFFFF;
+  --text-color: #333333;
+  --profile-color: #000000;
+  --profile-job-color: #8F9FAD;
+  --widget-btn-color: #7658E0;
+  --nav-search-color: #F6F5FF;
+}
+
+.dark {
+  --background-color: #000000;
+  --sidebar-bg-color: #242526;
+  --sidebar-bg-active-color: #3A3B3C;
+  --sidebar-active-color: #CCCCCC;
+  --svg-color: #CCCCCC;
+  --open-btn-color: #333335;
+  --heading-color: #FFFFFF;
+  --card-bg-color: #474849;
+  --text-color: #CCCCCC;
+  --profile-color: #FFFFFF;
+  --profile-job-color: #CCCCCC;
+  --widget-btn-color: #FFFFFF;
+  --nav-search-color: #3A3B3C;
+}
+
 html {
   height: 100%;
 }
@@ -53,7 +85,7 @@ body {
   max-width: 1920px;
   min-height: 100%;
   margin: 0 auto;
-  background-color: #F6F5FF;
+  background-color: var(--background-color);
 }
 
 .sidebar {
@@ -62,7 +94,7 @@ body {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  background-color: #FFFFFF;
+  background-color: var(--sidebar-bg-color);
 }
 
 .sidebar-opened .page-content {
@@ -80,7 +112,24 @@ body {
 }
 
 .nav__search {
-  background-color: #F6F5FF;
+  display: flex;
+  margin-bottom: 10px;
+  padding: 18px;
+  border-radius: 10px;
+  text-decoration: none;
+  color: var(--svg-color);
+  background-color: var(--nav-search-color);
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.nav__search svg {
+  margin-right: 0;
+}
+
+.sidebar-opened .nav__search svg {
+  margin-right: 24px;
 }
 
 .nav-link {
@@ -89,18 +138,18 @@ body {
   padding: 18px;
   border-radius: 10px;
   text-decoration: none;
-  color: #8F9FAD;
+  color: var(--svg-color);
   font-size: 18px;
   line-height: normal;
   font-weight: 500;
 }
 
 .nav-link svg {
-  color: #8F9FAD;
+  color: var(--svg-color);
 }
 
 .nav-link--active {
-  background-color: #455AE0;
+  background-color: var(--sidebar-bg-active-color);
 }
 
 .nav-link--active svg {
@@ -134,7 +183,7 @@ body {
   min-width: 26px;
   min-height: 26px;
   background-image: url("../img/right-arrow-icon.svg");
-  background-color: #455AE0;
+  background-color: var(--open-btn-color);
   border: none;
   border-radius: 50%;
   right: -13px;
@@ -159,8 +208,8 @@ body {
   margin-bottom: 10px;
   border: none;
   border-radius: 10px;
-  color: #8F9FAD;
-  background-color: #F6F5FF;
+  color: var(--svg-color);
+  background-color: var(--sidebar-bg-color);
   font-size: 18px;
   line-height: normal;
   font-weight: 500;
@@ -168,9 +217,13 @@ body {
   cursor: pointer;
 }
 
+.dark .sidebar__btn {
+  margin-bottom: 9px;
+}
+
 .exit-btn {
   padding: 18px;
-  background-color: #FFFFFF;
+  background-color: var(--sidebar-bg-color);
 }
 
 .exit-btn::before {
@@ -180,6 +233,10 @@ body {
   min-height: 24px;
   background-image: url("../img/sign-out-icon.svg");
   z-index: 1;
+}
+
+.dark .exit-btn::before {
+  background-image: url("../img/sign-out-dark-icon.png");
 }
 
 .dark .dark-theme-btn {
@@ -249,7 +306,7 @@ body {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #000000;
+  color: var(--profile-color);
   font-size: 18px;
   line-height: normal;
   font-weight: 500;
@@ -288,7 +345,7 @@ body {
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #333333;
+  color: var(--heading-color);
 }
 
 .indicators__settings {
@@ -304,7 +361,7 @@ body {
   font-size: 14px;
   line-height: 18px;
   font-weight: 500;
-  color: #333333;
+  color: var(--text-color);
   cursor: pointer;
 }
 
@@ -361,9 +418,13 @@ body {
   min-width: 24px;
   min-height: 24px;
   background-image: url("../img/settings-icon.png");
-  background-color: none;
+  background-color: var(--background-color);
   border: none;
   cursor: pointer;
+}
+
+.dark .indicators__settings-btn {
+  background-image: url("../img/settings-dark-icon.png");
 }
 
 .indicators__cards {
@@ -375,7 +436,7 @@ body {
 .indicators__card {
   width: 430px;
   padding: 20px;
-  background-color: #FFFFFF;
+  background-color: var(--card-bg-color);
   border-radius: 10px;
 }
 
@@ -393,7 +454,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
-  color: #333333;
+  color: var(--text-color);
 }
 
 .card__indicators-money {
@@ -401,7 +462,7 @@ body {
   font-size: 18px;
   line-height: 24px;
   font-weight: 500;
-  color: #333333;
+  color: var(--text-color);
 }
 
 .card__indicators-percent {
@@ -412,21 +473,29 @@ body {
   color: #48AC98;
 }
 
+.card__indicators-percent--red {
+  color: #D74B4B;
+}
+
 .widgets__title {
   margin: 0;
   font-size: 30px;
   line-height: 36px;
   font-weight: 700;
-  color: #333333;
+  color: var(--text-color);
 }
 
 .widgets__settings-btn {
   min-width: 24px;
   min-height: 24px;
   background-image: url("../img/settings-icon.png");
-  background-color: none;
+  background-color: var(--background-color);
   border: none;
   cursor: pointer;
+}
+
+.dark .widgets__settings-btn {
+  background-image: url("../img/settings-dark-icon.png");
 }
 
 .widgets__cards {
@@ -439,7 +508,7 @@ body {
 .widget {
   width: 524px;
   padding-bottom: 0;
-  background-color: #FFFFFF;
+  background-color: var(--card-bg-color);
   border-radius: 10px;
 }
 
@@ -448,7 +517,7 @@ body {
   font-size: 20px;
   line-height: 26px;
   font-weight: 500;
-  color: #333333;
+  color: var(--text-color);
 }
 
 .widget__wrapper {
@@ -495,7 +564,7 @@ body {
   font-size: 18px;
   line-height: 22px;
   font-weight: 500;
-  color: #333333;
+  color: var(--text-color);
 }
 
 .widgets__btn {
@@ -504,9 +573,10 @@ body {
   padding: 14px;
   font-size: 16px;
   line-height: 20px;
-  color: #7658E0;
-  background-color: #FFFFFF;
+  color: var(--widget-btn-color);
+  background-color: var(--card-bg-color);
   border: none;
+  border-radius: 0 0 10px 10px;
   cursor: pointer;
 }
 
@@ -552,5 +622,5 @@ body {
   font-size: 16px;
   line-height: 20px;
   font-weight: 500;
-  color: #333333;
+  color: var(--text-color);
 }
