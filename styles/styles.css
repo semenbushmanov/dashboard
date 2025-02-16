@@ -35,3 +35,160 @@ body {
   color: #333333;
   background-color: #F6F5FF;
 }
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.wrapper {
+  display: grid;
+  grid-template-columns: 88px 1fr;
+  max-width: 1920px;
+  min-height: 100%;
+  margin: 0 auto;
+  background-color: #F6F5FF;
+}
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background-color: #FFFFFF;
+}
+
+.sidebar-opened {
+  grid-template-columns: 250px 1fr;
+}
+
+.sidebar__nav {
+  padding-top: 96px;
+}
+
+.nav__list {
+  margin: 0;
+  padding: 14px;
+  list-style: none;
+}
+
+.nav__search {
+  background-color: #F6F5FF;
+}
+
+.nav-link {
+  display: flex;
+  margin-bottom: 10px;
+  padding: 18px;
+  border-radius: 4px;
+  text-decoration: none;
+  color: #8F9FAD;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.nav-link svg {
+  color: #8F9FAD;
+}
+
+.nav-link--active {
+  background-color: #455AE0;
+}
+
+.nav-link--active svg {
+  color: #FFFFFF;
+}
+
+.nav-link--active .nav-link__text {
+  color: #FFFFFF;
+}
+
+.nav-link svg {
+  margin-right: 24px;
+}
+
+.sidebar__open-btn-container {
+  min-height: 96px;
+  position: absolute;
+  min-width: 250px;
+}
+
+.open-btn {
+  position: absolute;
+  min-width: 26px;
+  min-height: 26px;
+  background-image: url("../img/right-arrow-icon.svg");
+  background-color: #455AE0;
+  border: none;
+  border-radius: 50%;
+  right: -13px;
+  top: 50%;
+  z-index: 1;
+  cursor: pointer;
+}
+
+.sidebar__btn-block {
+  display: flex;
+  flex-direction: column;
+  padding: 20px 14px;
+}
+
+.sidebar__btn {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  padding: 18px;
+  border: none;
+  border-radius: 4px;
+  color: #8F9FAD;
+  background-color: #F6F5FF;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+  text-align: center;
+  cursor: pointer;
+}
+
+.exit-btn {
+  background-color: #FFFFFF;
+}
+
+.exit-btn::before {
+  position: relative;
+  content: "";
+  min-width: 24px;
+  min-height: 24px;
+  background-image: url("../img/sign-out-icon.svg");
+  z-index: 1;
+}
+
+.dark-theme-btn::before {
+  position: relative;
+  content: "";
+  min-width: 24px;
+  min-height: 24px;
+  background-image: url("../img/dark-mode-icon.svg");
+  z-index: 1;
+}
+
+.dark-theme-btn::after {
+  position: relative;
+  content: "";
+  min-width: 40px;
+  min-height: 22px;
+  background-image: url("../img/switch-off-icon.svg");
+  z-index: 1;
+}
+
+.sidebar__btn-text {
+  padding-left: 20px;
+  padding-right: 12px;
+}
