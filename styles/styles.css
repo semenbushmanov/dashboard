@@ -197,7 +197,36 @@ body {
   margin-left: 88px;
 }
 
-.profile__name,
+.profile {
+  min-height: 84px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  padding: 10px 40px;
+  border-bottom: 2px solid #FFFFFF;
+}
+
+.profile__link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  color: #000000;
+  font-size: 18px;
+  line-height: normal;
+  font-weight: 500;
+}
+
+.profile__info {
+  margin-right: 30px;
+}
+
+.profile__name {
+  margin: 0;
+  margin-bottom: 6px;
+}
+
 .profile__job-title {
   margin: 0;
+  color: #8F9FAD;
+  font-size: 12px;
 }
