@@ -113,10 +113,15 @@ body {
   flex-direction: column;
   justify-content: space-between;
   background-color: var(--sidebar-bg-color);
+  z-index: 10;
 }
 
 .sidebar-opened .page-content {
   margin-left: 250px;
+
+  @media (max-width: 660px) {
+    margin-left: 88px;
+  }
 }
 
 .sidebar__nav {
