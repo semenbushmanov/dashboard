@@ -15,7 +15,7 @@ sidebarBtn.addEventListener('click', () => {
 });
 
 darkThemeBtn.addEventListener('click', () => {
-  wrapper.classList.toggle('dark');
+  document.body.classList.toggle('dark');
   darkThemeBtn.classList.toggle('dark'); 
   darkModeText.classList.toggle('visually-hidden');
   lightModeText.classList.toggle('visually-hidden');
