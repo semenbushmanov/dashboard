@@ -1,0 +1,354 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="styles/styles.css">
+  </head>
+  <body>
+    <div class="wrapper sidebar-opened">
+      <aside class="sidebar">
+        <div class="sidebar__open-btn-container">
+          <button class="sidebar__open-btn open-btn" type="button">
+            <span class="visually-hidden">Открыть панель навигации</span>
+          </button>
+        </div>
+        <nav class="sidebar__nav nav">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a class="nav__search" href="#">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="m23.707 22.294-5.97-5.97a10.016 10.016 0 1 0-1.413 1.415l5.969 5.969a1 1 0 0 0 1.414-1.414ZM10 18a8 8 0 1 1 8-8 8.009 8.009 0 0 1-8 8Z" fill="currentcolor"/>
+                </svg>
+                <span class="nav-search__text">Поиск...</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link nav-link--active" href="index.html">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <path d="m23.121 9.069-7.585-7.586a5.008 5.008 0 0 0-7.072 0L.88 9.069A2.978 2.978 0 0 0 0 11.189v9.818a3 3 0 0 0 3 3h18a3 3 0 0 0 3-3V11.19a2.978 2.978 0 0 0-.879-2.121Zm-8.12 12.938H9v-3.934a3 3 0 0 1 6 0v3.934Zm7-1a1 1 0 0 1-1 1h-4v-3.934a5 5 0 0 0-10 0v3.934H3a1 1 0 0 1-1-1V11.19c0-.265.105-.52.292-.707L9.878 2.9a3.008 3.008 0 0 1 4.244 0l7.585 7.586c.186.187.291.44.293.704v9.817Z" fill="currentcolor"/>
+                </svg>
+                <span class="nav-link__text">Главная</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <g clip-path="url(#a)" fill="currentcolor"><path d="M23 22H3a1 1 0 0 1-1-1V1a1 1 0 0 0-2 0v20a3 3 0 0 0 3 3h20a1 1 0 0 0 0-2Z"/><path d="M15 20a1 1 0 0 0 1-1v-7a1 1 0 0 0-2 0v7a1 1 0 0 0 1 1ZM7 20a1 1 0 0 0 1-1v-7a1 1 0 1 0-2 0v7a1 1 0 0 0 1 1ZM19 20a1 1 0 0 0 1-1V7a1 1 0 1 0-2 0v12a1 1 0 0 0 1 1ZM11 20a1 1 0 0 0 1-1V7a1 1 0 0 0-2 0v12a1 1 0 0 0 1 1Z"/></g><defs><clipPath id="a"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs>
+                </svg>
+                <span class="nav-link__text">Доходы</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <g clip-path="url(#a)"><path d="m22.555 13.662-1.9-6.836a9.321 9.321 0 0 0-18.08.474l-1.47 6.615A5 5 0 0 0 5.985 20H7.1a5 5 0 0 0 9.8 0h.838a5 5 0 0 0 4.818-6.338h-.001ZM12 22a2.999 2.999 0 0 1-2.816-2h5.632A3 3 0 0 1 12 22Zm8.126-5.185A2.977 2.977 0 0 1 17.736 18H5.987a2.999 2.999 0 0 1-2.928-3.651l1.47-6.616a7.321 7.321 0 0 1 14.2-.372l1.9 6.836a2.978 2.978 0 0 1-.502 2.618Z" fill="currentcolor"/></g><defs><clipPath id="b"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs>
+                </svg>
+                <span class="nav-link__text">Уведомления</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <g clip-path="url(#a)" fill="currentcolor"><path d="M18.713 12H14a2 2 0 0 1-2-2V5.274a3 3 0 0 0-1.166-2.383 2.87 2.87 0 0 0-2.481-.534 10.969 10.969 0 0 0 .553 21.414 11 11 0 0 0 12.734-8.114 2.876 2.876 0 0 0-.533-2.485A3.054 3.054 0 0 0 18.713 12Zm.988 3.168A8.968 8.968 0 1 1 8.84 4.3a.871.871 0 0 1 .765.172 1.016 1.016 0 0 1 .4.806V10a4 4 0 0 0 4 4h4.712a1.042 1.042 0 0 1 .816.4.884.884 0 0 1 .166.768Z"/><path d="M23.651 7.446A10.073 10.073 0 0 0 16.582.372a2.1 2.1 0 0 0-1.315.075A2 2 0 0 0 14.019 2.3V7a3 3 0 0 0 3 3h4.72a2.008 2.008 0 0 0 1.912-2.554ZM21.153 8h-4.138a1 1 0 0 1-1-1l-.008-4.693a.048.048 0 0 1 .025-.009h.026A8.072 8.072 0 0 1 21.734 8h-.58Z"/></g><defs><clipPath id="c"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs>
+                </svg>
+                <span class="nav-link__text">Аналитика</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <g clip-path="url(#a)"><path d="M17.5 1.917a6.4 6.4 0 0 0-5.5 3.3 6.4 6.4 0 0 0-5.5-3.3A6.8 6.8 0 0 0 0 8.967c0 4.546 4.786 9.513 8.8 12.88a4.974 4.974 0 0 0 6.4 0c4.014-3.367 8.8-8.334 8.8-12.88a6.8 6.8 0 0 0-6.5-7.05Zm-3.585 18.4a2.973 2.973 0 0 1-3.83 0C4.947 16.006 2 11.87 2 8.967a4.8 4.8 0 0 1 4.5-5.05 4.8 4.8 0 0 1 4.5 5.05 1 1 0 1 0 2 0 4.8 4.8 0 0 1 4.5-5.05 4.8 4.8 0 0 1 4.5 5.05c0 2.902-2.947 7.039-8.085 11.345v.005Z" fill="currentcolor"/></g><defs><clipPath id="d"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs>
+                </svg>
+                <span class="nav-link__text">Избранное</span>
+              </a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">
+                <svg width="24" height="24" fill="none" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                  <g clip-path="url(#a)" fill="currentcolor"><path d="M5.5 17a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"/><path d="M19 3H5a5.006 5.006 0 0 0-5 5v8a5.006 5.006 0 0 0 5 5h14a5.006 5.006 0 0 0 5-5V8a5.006 5.006 0 0 0-5-5ZM5 5h14a3 3 0 0 1 3 3H2a3 3 0 0 1 3-3Zm14 14H5a3 3 0 0 1-3-3v-6h20v6a3 3 0 0 1-3 3Z"/></g><defs><clipPath id="e"><path fill="#fff" d="M0 0h24v24H0z"/></clipPath></defs>
+                </svg>
+                <span class="nav-link__text">Кошелек</span>
+              </a>
+            </li>
+          </ul>
+        </nav>
+        <div class="sidebar__btn-block">
+          <button class="sidebar__btn exit-btn" type="button">
+            <span class="sidebar__btn-text">Выйти</span>
+          </button>
+          <button class="sidebar__btn dark-theme-btn" type="button">
+            <span class="sidebar__btn-text">
+              <span class="dark-mode">Dark mode</span>
+              <span class="light-mode visually-hidden">Light mode</span>
+            </span>
+          </button>
+        </div>
+      </aside>
+      <main class="page-content">
+        <h1 class="visually-hidden">Информационная панель</h1>
+        <section class="profile">
+          <h2 class="visually-hidden">Профиль</h2>
+          <a class="profile__link" href="#">
+            <div class="profile__info">
+              <p class="profile__name">John Smith</p>
+              <p class="profile__job-title">HR-manager</p>
+            </div>
+            <img class="profile__img" src="img/profile-photo.png" width="48" height="48" alt="John Smith">
+          </a>
+        </section>
+        <section class="page-content__block indicators">
+          <div class="indicators__wrapper">
+            <h2 class="indicators__title">Юнит-экономика</h2>
+            <div class="indicators__settings">
+              <button class="indicators__marketplace-btn indicators-btn" type="button">
+                <span>Все маркетплейсы</span>
+              </button>
+              <button class="indicators__time-range-btn indicators-btn" type="button">
+                <span>за неделю</span>
+              </button>
+              <button class="indicators__settings-btn" type="button">
+                <span class="visually-hidden">Настройки</span>
+              </button>
+            </div>
+          </div>
+          <div class="indicators__cards">
+            <div class="indicators__card card">
+              <h3 class="card__title">Выручка</h3>
+              <div class="card__indicators-wrapper">
+                <div class="card__indicators">
+                  <p class="card__indicators-money">250 034 ₽</p>
+                  <p class="card__indicators-percent">+15% к прошлому периоду</p>
+                </div>
+                <img class="card__chart" src="img/revenue-chart.png" width="120" height="42" alt="Выручка">
+              </div>
+            </div>
+            <div class="indicators__card card">
+              <h3 class="card__title">Валовая прибыль</h3>
+              <div class="card__indicators-wrapper">
+                <div class="card__indicators">
+                  <p class="card__indicators-money">10 000 ₽</p>
+                  <p class="card__indicators-percent">+15% к прошлому периоду</p>
+                </div>
+                <img class="card__chart" src="img/revenue-chart.png" width="120" height="42" alt="Выручка">
+              </div>
+            </div>
+            <div class="indicators__card card">
+              <h3 class="card__title">Основные расходы</h3>
+              <div class="card__indicators-wrapper">
+                <div class="card__indicators">
+                  <p class="card__indicators-money">145 334 ₽</p>
+                  <p class="card__indicators-percent card__indicators-percent--red">+15% к прошлому периоду</p>
+                </div>
+                <img class="card__chart" src="img/main-expenses-chart.png" width="120" height="42" alt="Выручка">
+              </div>
+            </div>
+            <div class="indicators__card card">
+              <h3 class="card__title">Прочие расходы</h3>
+              <div class="card__indicators-wrapper">
+                <div class="card__indicators">
+                  <p class="card__indicators-money">15 334 ₽</p>
+                  <p class="card__indicators-percent">-15% к прошлому периоду</p>
+                </div>
+                <img class="card__chart" src="img/other-expenses-chart.png" width="120" height="42" alt="Выручка">
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="page-content__block widgets">
+          <div class="widgets__wrapper">
+            <h2 class="widgets__title">Виджеты</h2>
+            <button class="widgets__settings-btn" type="button">
+              <span class="visually-hidden">Настройки</span>
+            </button>
+          </div>
+          <div class="widgets__cards">
+            <div class="widgets__card widget">
+              <h3 class="widget__title">Текущие заказы FBS</h3>
+              <div class="widget__wrapper">
+                <div class="widget__info">
+                  <div class="widget__order">
+                    <p class="widget__order-type">Новые</p>
+                    <p class="widget__order-quantity">8 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--yellow">
+                    <p class="widget__order-type">В сборке</p>
+                    <p class="widget__order-quantity">12 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--last widget__order--green">
+                    <p class="widget__order-type">Отгружены, завершены или отменены</p>
+                    <p class="widget__order-quantity">20 заказов</p>
+                  </div>
+                </div>
+                <div class="widget__chart">
+                  <div class="widget__chart-total">
+                    <p class="widget__chart-total-title">Итого</p>
+                    <p class="widget__chart-total-number">40 заказов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="widgets__btn-block">
+                <button class="widgets__btn" type="button">
+                  <span class="widgets__btn-text">Показать подробнее</span>
+                </button>
+              </div>
+            </div>
+            <div class="widgets__card widget">
+              <h3 class="widget__title">Текущие заказы FBS</h3>
+              <div class="widget__wrapper">
+                <div class="widget__info">
+                  <div class="widget__order">
+                    <p class="widget__order-type">Новые</p>
+                    <p class="widget__order-quantity">8 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--yellow">
+                    <p class="widget__order-type">В сборке</p>
+                    <p class="widget__order-quantity">12 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--last widget__order--green">
+                    <p class="widget__order-type">Отгружены, завершены или отменены</p>
+                    <p class="widget__order-quantity">20 заказов</p>
+                  </div>
+                </div>
+                <div class="widget__chart">
+                  <div class="widget__chart-total">
+                    <p class="widget__chart-total-title">Итого</p>
+                    <p class="widget__chart-total-number">40 заказов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="widgets__btn-block">
+                <button class="widgets__btn" type="button">
+                  <span class="widgets__btn-text">Показать подробнее</span>
+                </button>
+              </div>
+            </div>
+            <div class="widgets__card widget">
+              <h3 class="widget__title">Текущие заказы FBS</h3>
+              <div class="widget__wrapper">
+                <div class="widget__info">
+                  <div class="widget__order">
+                    <p class="widget__order-type">Новые</p>
+                    <p class="widget__order-quantity">8 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--yellow">
+                    <p class="widget__order-type">В сборке</p>
+                    <p class="widget__order-quantity">12 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--last widget__order--green">
+                    <p class="widget__order-type">Отгружены, завершены или отменены</p>
+                    <p class="widget__order-quantity">20 заказов</p>
+                  </div>
+                </div>
+                <div class="widget__chart">
+                  <div class="widget__chart-total">
+                    <p class="widget__chart-total-title">Итого</p>
+                    <p class="widget__chart-total-number">40 заказов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="widgets__btn-block">
+                <button class="widgets__btn" type="button">
+                  <span class="widgets__btn-text">Показать подробнее</span>
+                </button>
+              </div>
+            </div>
+            <div class="widgets__card widget">
+              <h3 class="widget__title">Текущие заказы FBS</h3>
+              <div class="widget__wrapper">
+                <div class="widget__info">
+                  <div class="widget__order">
+                    <p class="widget__order-type">Новые</p>
+                    <p class="widget__order-quantity">8 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--yellow">
+                    <p class="widget__order-type">В сборке</p>
+                    <p class="widget__order-quantity">12 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--last widget__order--green">
+                    <p class="widget__order-type">Отгружены, завершены или отменены</p>
+                    <p class="widget__order-quantity">20 заказов</p>
+                  </div>
+                </div>
+                <div class="widget__chart">
+                  <div class="widget__chart-total">
+                    <p class="widget__chart-total-title">Итого</p>
+                    <p class="widget__chart-total-number">40 заказов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="widgets__btn-block">
+                <button class="widgets__btn" type="button">
+                  <span class="widgets__btn-text">Показать подробнее</span>
+                </button>
+              </div>
+            </div>
+            <div class="widgets__card widget">
+              <h3 class="widget__title">Текущие заказы FBS</h3>
+              <div class="widget__wrapper">
+                <div class="widget__info">
+                  <div class="widget__order">
+                    <p class="widget__order-type">Новые</p>
+                    <p class="widget__order-quantity">8 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--yellow">
+                    <p class="widget__order-type">В сборке</p>
+                    <p class="widget__order-quantity">12 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--last widget__order--green">
+                    <p class="widget__order-type">Отгружены, завершены или отменены</p>
+                    <p class="widget__order-quantity">20 заказов</p>
+                  </div>
+                </div>
+                <div class="widget__chart">
+                  <div class="widget__chart-total">
+                    <p class="widget__chart-total-title">Итого</p>
+                    <p class="widget__chart-total-number">40 заказов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="widgets__btn-block">
+                <button class="widgets__btn" type="button">
+                  <span class="widgets__btn-text">Показать подробнее</span>
+                </button>
+              </div>
+            </div>
+            <div class="widgets__card widget">
+              <h3 class="widget__title">Текущие заказы FBS</h3>
+              <div class="widget__wrapper">
+                <div class="widget__info">
+                  <div class="widget__order">
+                    <p class="widget__order-type">Новые</p>
+                    <p class="widget__order-quantity">8 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--yellow">
+                    <p class="widget__order-type">В сборке</p>
+                    <p class="widget__order-quantity">12 заказов</p>
+                  </div>
+                  <div class="widget__order widget__order--last widget__order--green">
+                    <p class="widget__order-type">Отгружены, завершены или отменены</p>
+                    <p class="widget__order-quantity">20 заказов</p>
+                  </div>
+                </div>
+                <div class="widget__chart">
+                  <div class="widget__chart-total">
+                    <p class="widget__chart-total-title">Итого</p>
+                    <p class="widget__chart-total-number">40 заказов</p>
+                  </div>
+                </div>
+              </div>
+              <div class="widgets__btn-block">
+                <button class="widgets__btn" type="button">
+                  <span class="widgets__btn-text">Показать подробнее</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+    </div>
+    <script src="scripts/script.js"></script>
+  </body>
+</html>
